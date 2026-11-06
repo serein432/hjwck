@@ -1,0 +1,27 @@
+# 智能语音播报系统 — 依赖清单（Python 3.10+）
+# 安装：pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+# Web 框架
+fastapi>=0.110
+uvicorn>=0.27
+
+# 桌面壳（Windows WebView2，Win11 自带）
+pywebview>=4.4
+
+# 音频采集与播放
+sounddevice>=0.4
+soundfile>=0.12
+
+# 语音合成：在线 edge-tts + 离线 SAPI 兜底
+edge-tts>=6.1
+pywin32>=306
+
+# 离线 ASR（Vosk，需另下中文模型）
+vosk>=0.3.45
+
+# 触发源
+paho-mqtt>=1.6
+apscheduler>=3.10
+
+# 打包 exe（可选）
+# pyinstaller>=6.0
